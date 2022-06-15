@@ -46,6 +46,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        flex-grow: 0;
+        flex-shrink: 0;
         
     
     }
@@ -82,6 +84,8 @@
         display: flex;
         flex-direction: column;
         flex-basis: 200px;
+        flex-grow: 0;
+        flex-shrink: 0;
 
     }
 
@@ -125,12 +129,26 @@
 
         color: hsla(0, 0%, 100%, 0.75);
     }
+    @media screen and (max-width: 500px){
+     .sedans,
+    .suvs,
+    .luxury {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100px;
+        flex-grow: 0;
+        flex-shrink: 0;
 
+
+        
+    }
+}
     
 </style>
 
 <body>
-    <header>Click here to go to <a href="grid.html">flexbox layout</a></header>
+    <header>Click here to go to <a href="grid.html">grid layout</a></header>
     <main>
             <div class="sedans">
                 <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
